@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
 function loadFoodItems() {
     const foodItems = JSON.parse(localStorage.getItem('foodItems')) || [];
     if (foodItems.length === 0) {
-        // Initialize with default food items if empty
         initializeDefaultFoodItems();
     } else {
         displayFoodItems(foodItems);
@@ -35,7 +34,6 @@ function initializeDefaultFoodItems() {
         { "id": "1", "name": "Pizza", "price": 250, "image": "pizza.jpg" },
         { "id": "2", "name": "Burger", "price": 150, "image": "burger.jpg" },
         { "id": "3", "name": "French Fries", "price": 100, "image": "fries.jpg" }
-        // Add more default items up to 30
     ];
     localStorage.setItem('foodItems', JSON.stringify(defaultItems));
     displayFoodItems(defaultItems);
