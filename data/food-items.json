@@ -1,0 +1,6 @@
+[
+    { "id": "1", "name": "Pizza", "price": 250, "image": "pizza.jpg" },
+    { "id": "2", "name": "Burger", "price": 150, "image": "burger.jpg" },
+    { "id": "3", "name": "French Fries", "price": 100, "image": "fries.jpg" },
+    // Add more items up to 30
+]
