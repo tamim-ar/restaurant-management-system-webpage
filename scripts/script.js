@@ -67,7 +67,7 @@ function displayManageFoodItems(items) {
         const foodItem = document.createElement('div');
         foodItem.classList.add('food-item');
         foodItem.innerHTML = `
-            <img src="images/${item.image}" alt="${item.name}" />
+            <img src="./images/${item.image}" alt="${item.name}" />
             <h3>${item.name}</h3>
             <p>${item.price} BDT</p>
             <button onclick="editFoodItem('${item.id}')">Edit</button>
