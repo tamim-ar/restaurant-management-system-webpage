@@ -67,7 +67,9 @@ main {
     background-color: #dc3545;
 }
 
-#cart-items, #manage-food, #order-history {
+#cart-items,
+#manage-food,
+#order-history {
     padding: 2rem;
 }
 
@@ -78,7 +80,8 @@ main {
     flex-wrap: wrap;
 }
 
-#food-form input, #food-form button {
+#food-form input,
+#food-form button {
     padding: 0.5rem;
     font-size: 1rem;
 }
@@ -88,5 +91,3 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
 }
-
-/* Additional styles to make the site responsive and user-friendly... */

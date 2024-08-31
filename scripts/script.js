@@ -1,11 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     loadFoodItems();
     loadOrderHistory();
     loadCartItems();
 
     const foodForm = document.getElementById('food-form');
     if (foodForm) {
-        foodForm.addEventListener('submit', function(event) {
+        foodForm.addEventListener('submit', function (event) {
             event.preventDefault();
             saveFoodItem();
         });
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const checkoutButton = document.getElementById('checkout-button');
     if (checkoutButton) {
-        checkoutButton.addEventListener('click', function() {
+        checkoutButton.addEventListener('click', function () {
             checkout();
         });
     }
@@ -196,7 +196,7 @@ function checkout() {
     const totalPrice = cart.reduce((total, item) => total + parseFloat(item.price), 0);
     const orderId = generateId();
     const orderDate = new Date().toISOString().split('T')[0];
-    
+
     const order = {
         id: orderId,
         totalPrice: totalPrice,
