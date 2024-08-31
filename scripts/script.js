@@ -48,7 +48,7 @@ function displayFoodItems(items) {
         const foodItem = document.createElement('div');
         foodItem.classList.add('food-item');
         foodItem.innerHTML = `
-            <img src="images/${item.image}" alt="${item.name}" />
+            <img src="images//${item.image}" alt="${item.name}" />
             <h3>${item.name}</h3>
             <p>${item.price} BDT</p>
             <button onclick="addToCart('${item.id}')">Add to Cart</button>
@@ -65,7 +65,7 @@ function displayManageFoodItems(items) {
         const foodItem = document.createElement('div');
         foodItem.classList.add('food-item');
         foodItem.innerHTML = `
-            <img src="./images/${item.image}" alt="${item.name}" />
+            <img src="images//${item.image}" alt="${item.name}" />
             <h3>${item.name}</h3>
             <p>${item.price} BDT</p>
             <button onclick="editFoodItem('${item.id}')">Edit</button>
@@ -176,7 +176,7 @@ function loadCartItems() {
         const cartItem = document.createElement('div');
         cartItem.classList.add('food-item');
         cartItem.innerHTML = `
-            <img src="images/${item.image}" alt="${item.name}" />
+            <img src="images//${item.image}" alt="${item.name}" />
             <h3>${item.name}</h3>
             <p>${item.price} BDT</p>
         `;
