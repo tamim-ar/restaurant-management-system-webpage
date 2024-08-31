@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add to Cart</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
     <header>
-        <h1>Your Cart</h1>
+        <h1>Cart</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,15 +19,18 @@
         </nav>
     </header>
     <main>
-        <section id="cart-items">
-            <h2>Items in Your Cart</h2>
-            <div id="cart-grid">
-                <!-- Cart items will be dynamically loaded here -->
+        <div id="cart-grid">
+            <!-- Example Cart Item -->
+            <div class="food-item">
+                <img src="images/pizza.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Delicious cheese pizza with a crispy crust.</p>
+                <p>250 BDT x 2</p>
             </div>
-            <button id="checkout-button">Checkout</button>
-        </section>
+            <!-- More cart items will be dynamically added here -->
+        </div>
+        <button id="checkout-button">Checkout</button>
     </main>
     <script src="scripts/script.js"></script>
 </body>
-
 </html>
